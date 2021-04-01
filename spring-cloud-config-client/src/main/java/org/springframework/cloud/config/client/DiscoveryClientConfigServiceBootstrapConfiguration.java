@@ -94,6 +94,10 @@ public class DiscoveryClientConfigServiceBootstrapConfiguration
 		}
 	}
 
+	public void setInstanceProvider(ConfigServerInstanceProvider instanceProvider) {
+		this.instanceProvider = instanceProvider;
+	}
+
 	private void refresh() {
 		try {
 			String serviceId = this.config.getDiscovery().getServiceId();
